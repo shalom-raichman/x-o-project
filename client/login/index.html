@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Login &amp; CSS Only</title>
-    <link rel="stylesheet" href="./styles.css" />
-    <script src="../../dist/login/index.js" defer></script>
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Login &amp; CSS Only</title>
+        <link rel="stylesheet" href="./styles.css" />
+        <script src="../../dist/client/login/index.js" defer></script>
+    </head>
 
-  <body>
-    <section>
-      <div class="signin">
-        <div class="content">
-          <h2 class="sgin_in_title">Sign In</h2>
+    <body>
+        <section>
+            <div class="signin">
+                <div class="content">
+                    <h2 class="sgin_in_title">Sign In</h2>
 
-          <div class="form">
-            <div class="inputBox">
-              <input type="text" required /> <i>Username</i>
+                    <div class="form">
+                        <div class="inputBox">
+                            <input type="text" required /> <i>Username</i>
+                        </div>
+
+                        <div class="inputBox">
+                            <input type="password" required /> <i>Password</i>
+                        </div>
+
+                        <div class="links">
+                            <a href="#" class="forgot_password"
+                                >Forgot Password</a
+                            >
+                            <a href="#" class="sign_up_but">Signup</a>
+                        </div>
+
+                        <div class="inputBox">
+                            <input class="submit" type="submit" value="Login" />
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="inputBox">
-              <input type="password" required /> <i>Password</i>
-            </div>
-
-            <div class="links">
-              <a href="#" class="forgot_password">Forgot Password</a> <a href="#" class="sign_up_but">Signup</a>
-            </div>
-
-            <div class="inputBox">
-              <input class="submit" type="submit" value="Login" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-  </body>
+        </section>
+    </body>
 </html>
