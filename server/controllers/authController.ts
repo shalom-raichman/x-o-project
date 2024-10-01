@@ -3,8 +3,10 @@ import { handleSigninRequset } from "../routes/authRoute";
 
 const router: Router = Router();
 
-router.post("/signin", handleSigninRequset);
+router.post("/register", handleSigninRequset);
 
-router.delete("/signout", () => {});
+router.post("/login", handleSigninRequset);
+
+// router.get("/profile", verifyUser, handleProfileRequest);
 
 export default router;
