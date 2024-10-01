@@ -1,9 +1,10 @@
 import { Router } from "express";
 import { handleSigninRequset } from "../routes/authRoute";
+import { handleSignupRequset } from "../routes/usersRoute"
 
 const router: Router = Router();
 
-router.post("/register", handleSigninRequset);
+router.post("/register", handleSignupRequset);
 
 router.post("/login", handleSigninRequset);
 

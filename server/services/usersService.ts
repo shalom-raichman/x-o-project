@@ -1,3 +1,4 @@
+import { getFileData, saveFileData } from "../config/fileDataLayer"
 import { users } from "../data/data";
 import ResponseData from "../types/dto/responseData";
 import SignupDTO from "../types/dto/signupDto";
@@ -18,6 +19,11 @@ export default class UserService {
       }
       const newUser = new User(username);
       await newUser.hashPassword(password);
+
+      const users: User[] =  await getFileData("users") as User[] || []
+      users.push(newUser)
+      await saveFileData<User>("users", users)
+
       users.push(newUser);
       return {
         err: false,
@@ -34,11 +40,11 @@ export default class UserService {
     }
   }
 
-  public static getAllUsers(): User[] {
-    return users;
-  }
+//   public static getAllUsers(): User[] {
+//     return users;
+//   }
 
-  public static getUserById(id: string): User|undefined {
-    return users.find((u) => u.id === id);
-  }
+//   public static getUserById(id: string): User|undefined {
+//     return users.find((u) => u.id === id);
+//   }
 }
