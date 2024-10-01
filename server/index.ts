@@ -2,7 +2,7 @@ import express, { Express } from "express";
 import cookieParser from "cookie-parser";
 import "dotenv/config";
 import authController from "./controllers/authController";
-import todoController from "./controllers/todoController";
+import todoController from "./controllers/gameController";
 
 const app: Express = express();
 
