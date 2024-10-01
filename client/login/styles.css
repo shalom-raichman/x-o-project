@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 *{
   margin: 0;
@@ -86,7 +87,7 @@ section .signin .content .form .inputBox i
   left: 0;
   padding: 15px 10px;
   font-style: normal;
-  color: #aaa;
+  color: #e2e1e1;
   transition: 0.5s;
   pointer-events: none;
 }
